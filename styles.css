@@ -6,6 +6,58 @@ html{
     margin: 0;
     box-sizing: border-box;
 }
+header{
+    position: sticky;
+    top: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.9rem;
+    gap: 7rem;
+    background-color: rgb(255, 255, 255);
+}
+.nav__logo{
+    size-adjust: none;
+    width: 8rem;
+}
+.nav__ul-noResponsive{
+    display: flex;   
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.nav__ul-noResponsive li{
+    margin: 0 2rem;
+}
+.nav__ul-noResponsive li a{
+    transition: all 0.3s;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(26, 26, 26);
+    font-weight: 500;
+    padding: 1rem 0.5rem;
+}
+.nav__ul-noResponsive li a:hover{
+    border-radius: 15px;
+    background-color: #9b7c4b28;
+}
+.nav button{
+    transition: all 0.2s;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    border-style: none;
+    padding: 0.4rem 1rem;
+    background-color: #9b7c4b;
+    color: white;
+}
+.nav button:hover{
+    background-color: white;
+    outline: #9b7c4b 2px solid;
+    cursor: pointer;
+    color: #9b7c4b;
+}
 
 .bg{
     background-image: url(./img/background1.jpg);
