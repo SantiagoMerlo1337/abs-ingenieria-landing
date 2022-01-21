@@ -17,6 +17,7 @@ header{
     padding: 0.9rem;
     gap: 7rem;
     background-color: rgb(255, 255, 255);
+    outline: lightgray 1px solid;
 }
 .nav__logo{
     size-adjust: none;
@@ -66,25 +67,40 @@ header{
     background-size: 100%;
 }
 
+main{
+    background-color: #e9e9e9;
+}
 .descripcion{
-    display: grid;
-    grid-template-columns: 1fr;
-    /* padding: 5rem; */
 }
 .descripcion article{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.card{
-    background: red;
-    width: 23rem;
-    height: 36rem;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(255, 255, 255);
+    margin: 30px 50px;
     border-radius: 15px;
 }
+
+.texto1{
+    padding-top: 1rem;
+    max-width: 50%;
+}
+.titulo-cartas{
+    text-align: center;
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+    font-size: 2rem;
+}
+
 
 .contenedor-cartas{
     display: flex;
     justify-content: center;
     gap: 70px;
+}
+
+.card{
+    background: #86bfdb;
+    width: 23rem;
+    height: 36rem;
+    border-radius: 15px;
 }
