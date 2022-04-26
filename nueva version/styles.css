@@ -1,0 +1,11 @@
+.logoHeader{
+    width: 140px;
+}
+.itemsNav:hover{
+    background-color: rgba(0,0,0,0.12);
+    border-radius: 35px;
+    transition: all 0.3s;
+}
+.containerPrincipal{
+    padding: 35px 0;
+}
