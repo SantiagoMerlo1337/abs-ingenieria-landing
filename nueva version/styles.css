@@ -1,5 +1,6 @@
 body{
     font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
 }
 .logoHeader{
     width: 140px;
@@ -19,8 +20,8 @@ body{
 .bannerPrincipal{
     height: 425px;
     width: 100%;
-
     object-fit:cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 .positionAbs{
     position: absolute;
@@ -35,7 +36,6 @@ body{
 .tituloPrincipal, .subtituloPrincipal{
     color:white;
 }
-
 .logoFooter{
     width: 120px;
     filter: invert();
@@ -44,11 +44,6 @@ body{
     font-weight: 700;
     font-size: 3.2rem;
 }
-
-
-
-
-
 @media (max-width: 705px) {
     .tituloPrincipal{
       font-size: 1.2rem;
