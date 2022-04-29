@@ -1,5 +1,12 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
 .logoHeader{
     width: 140px;
+}
+.itemsNav{
+    font-weight: 700;
+    font-size: 1.1rem;
 }
 .itemsNav:hover{
     background-color: rgba(0,0,0,0.12);
@@ -10,8 +17,40 @@
     padding: 35px 0;
 }
 .bannerPrincipal{
-    height: 550px;
+    height: 425px;
     width: 100%;
 
     object-fit:cover;
+}
+.positionAbs{
+    position: absolute;
+}
+.tituloPrincipal{
+    font-size: 4rem;
+}
+.subtituloPrincipal{
+    font-size: 2rem;
+}
+
+.tituloPrincipal, .subtituloPrincipal{
+    color:white;
+}
+
+.logoFooter{
+    width: 120px;
+    filter: invert();
+}
+.pregunta{
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+
+
+
+
+@media (max-width: 705px) {
+    .tituloPrincipal{
+      font-size: 1.2rem;
+    }
 }
