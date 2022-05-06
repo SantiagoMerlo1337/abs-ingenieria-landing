@@ -1,19 +1,68 @@
-// $card-spacer-y:                     $spacer;
-// $card-spacer-x:                     $spacer;
-// $card-title-spacer-y:               $spacer * .5;
-// $card-border-width:                 $border-width;
-// $card-border-color:                 rgba(red, .125);
-// $card-border-radius:                500px;
-// $card-box-shadow:                   null;
-// $card-inner-border-radius:          subtract($card-border-radius, $card-border-width);
-// $card-cap-padding-y:                $card-spacer-y * .5;
-// $card-cap-padding-x:                $card-spacer-x;
-// $card-cap-bg:                       rgba($black, .03);
-// $card-cap-color:                    null;
-// $card-height:                       null;
-// $card-color:                        null;
-// $card-bg:                           $white;
-// $card-img-overlay-padding:          $spacer;
-// $card-group-margin:                 $grid-gutter-width * .5;
+//VARIABLES SASS
+// $primary:       $blue;
+// $secondary:     $gray-600;
+
+$card-border-color:                 rgba(black, 0.12);
+$card-border-radius:                30px;
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+//RAW CSS
+
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: 'Ubuntu', sans-serif;
+    /* scroll-behavior: smooth; */
+
+}
+.logoHeader{
+    width: 140px;
+}
+.itemsNav{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.itemsNav:hover{
+    background-color: rgba(0,0,0,0.12);
+    border-radius: 35px;
+    transition: all 0.3s;
+}
+.containerPrincipal{
+    padding: 35px 0;
+}
+.bannerPrincipal{
+    height: 425px;
+    width: 100%;
+    object-fit:cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.positionAbs{
+    position: absolute;
+}
+.tituloPrincipal{
+    font-size: 4rem;
+}
+.subtituloPrincipal{
+    font-size: 2rem;
+}
+
+.tituloPrincipal, .subtituloPrincipal{
+    color:white;
+}
+.logoFooter{
+    width: 120px;
+    // filter: invert();
+}
+.pregunta{
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+@media (max-width: 705px) {
+    .tituloPrincipal{
+      font-size: 1.2rem;
+    }
+}

@@ -5115,8 +5115,8 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 30px;
 }
 
 .card > hr {
@@ -5131,14 +5131,14 @@ fieldset:disabled .btn {
 
 .card > .list-group:first-child {
   border-top-width: 0;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: 29px;
+  border-top-right-radius: 29px;
 }
 
 .card > .list-group:last-child {
   border-bottom-width: 0;
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: 29px;
+  border-bottom-left-radius: 29px;
 }
 
 .card > .card-header + .list-group,
@@ -5174,21 +5174,21 @@ fieldset:disabled .btn {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .card-header:first-child {
-  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  border-radius: 29px 29px 0 0;
 }
 
 .card-footer {
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  border-radius: 0 0 29px 29px;
 }
 
 .card-header-tabs {
@@ -5210,7 +5210,7 @@ fieldset:disabled .btn {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  border-radius: calc(0.25rem - 1px);
+  border-radius: 29px;
 }
 
 .card-img,
@@ -5221,14 +5221,14 @@ fieldset:disabled .btn {
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: 29px;
+  border-top-right-radius: 29px;
 }
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: 29px;
+  border-bottom-left-radius: 29px;
 }
 
 .card-group > .card {
@@ -11954,6 +11954,75 @@ fieldset:disabled .btn {
   }
   .d-print-none {
     display: none !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  /* scroll-behavior: smooth; */
+}
+
+.logoHeader {
+  width: 140px;
+}
+
+.itemsNav {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.itemsNav:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+  border-radius: 35px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.containerPrincipal {
+  padding: 35px 0;
+}
+
+.bannerPrincipal {
+  height: 425px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.positionAbs {
+  position: absolute;
+}
+
+.tituloPrincipal {
+  font-size: 4rem;
+}
+
+.subtituloPrincipal {
+  font-size: 2rem;
+}
+
+.tituloPrincipal, .subtituloPrincipal {
+  color: white;
+}
+
+.logoFooter {
+  width: 120px;
+}
+
+.pregunta {
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+@media (max-width: 705px) {
+  .tituloPrincipal {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=custom.css.map */
