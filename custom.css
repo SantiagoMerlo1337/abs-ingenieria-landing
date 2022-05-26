@@ -12031,17 +12031,27 @@ body {
 
 .redes img {
   width: 40px;
+  display: inline-block;
 }
 
 .redes p {
   font-size: 1.2rem;
   font-weight: 500;
+  display: inline-block;
 }
 
-.redes {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.redes a {
+  text-decoration: none;
+  color: black;
+}
+
+.container-redes {
+  display: inline-block;
+  padding: 10px;
+}
+
+.googleMaps {
+  border-radius: 20px;
 }
 
 @media (max-width: 705px) {

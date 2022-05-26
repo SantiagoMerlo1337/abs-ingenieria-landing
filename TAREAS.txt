@@ -12,7 +12,7 @@
 -Animaciones para sentirla viva
 -Redes sociales en footer
 
-
 //// FIXES ////
+
 -Collapse del header.
 -Botones header reedirecciones
