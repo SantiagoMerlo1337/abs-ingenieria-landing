@@ -1,0 +1,18 @@
+//// OBLIGATORIO ////
+
+-Imagenes foto carnet mariana y mariano
+-Redes sociales en contacto (WPP, Facebook, IG)
+-Sustituir los lorems
+-Agregar metas en html
+-OPTIMIZACIÓN DE CODIGO
+
+//// MEJORAS ////
+
+-Ideas para fondo
+-Animaciones para sentirla viva
+-Redes sociales en footer
+
+
+//// FIXES ////
+-Collapse del header.
+-Botones header reedirecciones

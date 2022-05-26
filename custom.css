@@ -12029,6 +12029,21 @@ body {
   border-radius: 500px;
 }
 
+.redes img {
+  width: 40px;
+}
+
+.redes p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.redes {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (max-width: 705px) {
   .tituloPrincipal {
     font-size: 1.2rem;
