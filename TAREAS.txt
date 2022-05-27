@@ -1,7 +1,6 @@
 //// OBLIGATORIO ////
 
 -Imagenes foto carnet mariana y mariano
--Redes sociales en contacto (WPP, Facebook, IG)
 -Sustituir los lorems
 -Agregar metas en html
 -OPTIMIZACIÓN DE CODIGO
@@ -14,5 +13,6 @@
 
 //// FIXES ////
 
+-facebook wrap responsive en seccion de contacto (jugar con el responsive para entender)
 -Collapse del header.
 -Botones header reedirecciones
