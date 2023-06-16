@@ -27,7 +27,7 @@ Table Of Contents:
 
 /*****************************************
 Colors:
-- Backgrounds, navbar, icons - orange #1265A5
+- Backgrounds, navbar, icons - orange #007ddd
 - Backgrounds - light gray #f9fafb
 - Buttons - yellow #ffc05a
 - Headings text - black #384653
@@ -184,9 +184,9 @@ hr.hr-heading {
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #ffc05a;
+	border: 1px solid #51abff;
 	border-radius: 32px;
-	background-color: #ffc05a;
+	background-color: #51abff;
 	color: #384653;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -197,7 +197,7 @@ hr.hr-heading {
 
 .btn-solid-lg:hover {
 	border: 1px solid #384653;
-	background-color: transparent;
+	background-color: #0000008f;
 	color: #384653; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
@@ -330,13 +330,64 @@ hr.hr-heading {
 	background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") no-repeat;
 	background-size: 16px 16px;
 }
+.google-maps{
+	width: 75%;
+	height: 400px;
+	border-radius: 15px;
+	border:0;
+}
+.fb-icon, .fb-icon p{
+	color: #007ddd;
+	background-color: transparent;
+	transition: all 0.05s;
+}
+.fb-icon:hover, .fb-icon p{
+	color: #ffffff;
+	background-color: #007ddd;
+}
+.ig-icon, .ig-icon p{
+	color: #FF2947;
+	background-color: transparent;
+	transition: all 0.1s;
+}
+.ig-icon:hover, .ig-icon p{
+	color: #ffffff;
+	background-color: #FF2947;
+}
+.wpp-icon, .wpp-icon p{
+	color: #0B846D;
+	background-color: transparent;
+	transition: all 0.1s;
+}
+.wpp-icon:hover, .wpp-icon p{
+	color: #ffffff;
+	background-color: #0B846D;
+}
+.fb-icon, .ig-icon, .wpp-icon{
+	padding: 10px;
+	border-radius: 15px;
+}
+.size-icon{
+	font-size: 3rem;
+}
+.img-team{
+	width: 150px;
+}
 
+@media (max-width: 768px) {
+    .img-team{
+		width: 120px;
+	}
+	.google-maps{
+		width: 90%;
+	}
+}
 
 /**********************/
 /*     Navigation     */
 /**********************/
 .navbar {
-	background-color: #1265A5;
+	background-color: #007ddd;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
 }
@@ -369,7 +420,7 @@ hr.hr-heading {
 	padding-left: 1rem;
 	overflow-y: auto;
 	visibility: hidden;
-	background-color: #1265A5;
+	background-color: #007ddd;
 	/* background-color: #7db916; */
 	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
@@ -424,7 +475,7 @@ hr.hr-heading {
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 	border: none;
-	background-color: #1265A5;
+	background-color: #007ddd;
 	/* background-color: #c23e00; */
 }
 
@@ -439,7 +490,7 @@ hr.hr-heading {
 }
 
 .navbar .dropdown-item:hover {
-	background-color: #1265A5;
+	background-color: #007ddd;
 	color: #ffffff;
 	opacity: 1;
 }
@@ -465,12 +516,12 @@ hr.hr-heading {
 }
 
 .navbar .fa-stack-1x {
-	color: #1265A5;
+	color: #007ddd;
 	transition: all 0.2s ease;
 }
 
 .navbar .fa-stack:hover .fa-stack-2x {
-	color: #1265A5;
+	color: #007ddd;
 }
 
 .navbar .fa-stack:hover .fa-stack-1x {
@@ -491,11 +542,14 @@ hr.hr-heading {
 	position: relative;
 	padding-top: 7rem;
 	padding-bottom: 9rem;
-	background: linear-gradient(rgba(35, 15, 0, 0.8), rgba(35, 15, 0, 0.4)), url('../images/corcho-background.png') center center no-repeat;
+	background: linear-gradient(rgba(50, 15, 0, 0.8), rgba(50, 15, 0, 0.5)), url('../images/corcho-background.png') center center no-repeat;
+	/* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../images/corcho-background.png') center center no-repeat; */
 	background-size: cover;
 	text-align: center;
 }
-
+.text-shadow{
+	text-shadow: 1px 1px 6px rgba(50, 15, 0, 0.8);
+}
 .header .text-container {
 	margin-bottom: 4rem;
 }
@@ -547,7 +601,7 @@ hr.hr-heading {
 	width: 4.75rem;
 	height: 4.75rem;
 	border-radius: 50%;
-	background: #FF5A6A;
+	background: #ff0d29;
 	animation: pulse-border 1500ms ease-out infinite;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	-ms-transform: translateX(-50%) translateY(-50%);
@@ -629,7 +683,7 @@ hr.hr-heading {
 /*     Description     */
 /***********************/
 .cards-1 {
-	padding-top: 6rem;
+	padding-top: 6.75rem;
 	padding-bottom: 4rem;
 	text-align: center;
 }
@@ -699,8 +753,8 @@ hr.hr-heading {
 	margin-bottom: 1.75rem;
 }
 
-.description-modals .modal-content .list-unstyled .fas {
-	color: #1265A5;
+.description-modals .modal-content .list-unstyled .s {
+	color: #007ddd;
 	font-size: 0.875rem;
 	line-height: 1.75rem;
 }
@@ -718,7 +772,7 @@ hr.hr-heading {
 /*     Chapters     */
 /********************/
 .cards-2 {
-	padding-top: 1.75rem;
+	padding-top: 6.75rem;
 	padding-bottom: 4.5rem;
 	text-align: center;
 }
@@ -761,7 +815,7 @@ hr.hr-heading {
 /*     Summary     */
 /*******************/
 .basic-1 {
-	padding-top: 8.5rem;
+	padding-top: 6.75rem;
 	padding-bottom: 10rem;
 }
 
@@ -785,7 +839,7 @@ hr.hr-heading {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
 	padding-left: 1.5rem;
-	background-color: #1265A5;
+	background-color: #007ddd;
 	color: #ffffff;
 }
 
@@ -816,7 +870,7 @@ hr.hr-heading {
 .split .area-2 {
 	padding-top: 7.5rem;
 	padding-bottom: 8.5rem;
-	background-color: #1265A5;
+	background-color: #007ddd;
 }
 
 .split h2 {
@@ -893,7 +947,7 @@ hr.hr-heading {
 }
 
 .basic-2 .takeaway-icon .fas {
-	color: #1265A5;
+	color: #007ddd;
 	font-size: 2.25rem;
 }
 
@@ -948,7 +1002,7 @@ hr.hr-heading {
 }
 
 .basic-4 .list-unstyled .fas {
-	color: #1265A5;
+	color: #007ddd;
 	font-size: 0.875rem;
 	line-height: 1.75rem;
 }
@@ -1226,7 +1280,7 @@ hr.hr-heading {
 .ex-header {
 	padding-top: 8.5rem;
 	padding-bottom: 4rem;
-	background-color: #1265A5;
+	background-color: #007ddd;
 }
 
 .ex-header h1 {
@@ -1259,7 +1313,7 @@ hr.hr-heading {
 }
 
 .ex-cards-1 .card .fa-stack-2x {
-	color: #1265A5;
+	color: #007ddd;
 }
 
 .ex-cards-1 .card .fa-stack-1x {
@@ -1312,7 +1366,7 @@ hr.hr-heading {
 
 	/* Description */
 	.cards-1 {
-		padding-top: 5.25rem;
+		padding-top: 6.75rem;
 	}
 
 	.cards-1 .card {
@@ -1430,7 +1484,7 @@ hr.hr-heading {
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
-		background-color: #1265A5;
+		background-color: #007ddd;
 		box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
 	}
 
@@ -1509,7 +1563,7 @@ hr.hr-heading {
 
 	/* Description */
 	.cards-1 {
-		padding-top: 4.75rem;
+		padding-top: 6.75rem;
 	}
 	/* end of description */
 
